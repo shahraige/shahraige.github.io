@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://shahraige.github.io/"
 languageCode = "en-us"
 title = "Dosing Schedule"
 DefaultContentLanguage  = "en"
