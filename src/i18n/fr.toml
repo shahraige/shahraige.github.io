@@ -1,0 +1,63 @@
+[title]
+other = "SKYRIZI<sup>TM</sup> (risankizumab) Practice Dosing Schedule for the Last Year"
+
+[start]
+other = "Start"
+
+[firstDoseEndText]
+other = "End date<br>of 1st dose"
+
+[btnPrintText]
+other = "Click to Print"
+
+[rules]
+other = '''
+  * SKYRIZI is dosed 150 mg (two 75-mg subcutaneous injections) at Week 0, Week 4, and every 12 weeks thereafter.1
+  * SKYRIZI doses continue every 12 weeks after the first 5 doses shown above. It is important for patients to 
+    take their treatment as prescribed to achieve the full benefit. If patients stop treatment, their symptoms may 
+    come back.
+  * Consideration should be given to discontinuing treatment in patients who have shown no response after 16 weeks 
+    of treatment. Some patients with initial partial response may subsequently improve with continued treatment 
+    beyond 16 weeks.
+  * If a dose is missed, the dose should be administered as soon as possible. Thereafter, dosing should be resumed at
+    the regular scheduled time.
+'''  
+
+[indication]
+other = "Indication"
+
+[indicationDetail]
+other = '''
+  Skyrizi (risankizumab) is indicated for the treatment of moderate to severe plaque psoriasis in adults 
+  who are candidates for systemic therapy.
+'''
+
+[safety]
+other = "Important Safety Information"
+
+[safetyDetail]
+other = '''
+Risankizumab is contraindicated in patients with hypersensitivity to the active substance or to any of the excipients. 
+Risankizumab may increase the risk of infection. In patients with a chronic infection, a history of recurrent infection, 
+or known risk factors for infection, risankizumab should be used with caution. Treatment with risankizumab should not 
+be initiated in patients with any clinically important active infection until the infection resolves or is adequately 
+treated. Prior to initiating treatment with risankizumab, patients should be evaluated for tuberculosis (TB) infection. 
+Patients receiving risankizumab should be monitored for signs and symptoms of active TB. Anti-TB therapy should be 
+considered prior to initiating risankizumab in patients with a past history of latent or active TB in whom an adequate 
+course of treatment cannot be confirmed.
+
+Prior to initiating therapy with risankizumab, completion of all appropriate immunisations should be considered 
+according to current immunisation guidelines. If a patient has received live vaccination (viral or bacterial), 
+it is recommended to wait at least 4 weeks prior to starting treatment with risankizumab. Patients treated with 
+risankizumab should not receive live vaccines during treatment and for at least 21 weeks after treatment.
+
+The most frequently reported adverse reactions were upper respiratory infections, which occurred in 13% of patients.
+Commonly (≥ 1/100 to < 1/10) reported adverse reactions included tinea infections, headache, pruritus, fatigue and 
+injection site reactions.
+
+This is not a complete summary of all safety information. See SKYRIZI full summary of product characteristics (SmPC) 
+at [www.ema.europa.eu](https://www.ema.europa.eu/).
+'''
+
+[iso]
+other = "__ALL-SKZD-190006__"

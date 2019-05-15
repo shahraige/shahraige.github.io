@@ -1,0 +1,52 @@
+{{ define "main" }}
+  <div class="dose-schedule">
+    <div class="header-title">
+      <h3>{{ i18n "title" | markdownify }}</h3>
+    </div>
+  
+    <div class="dose-schedule-cmp">
+      <div class="schedule-picker">
+        <h3>{{ i18n "start" | markdownify }}</h3>
+        <div class="picker">
+          <p id="picked_date"></p>
+          <input type="hidden" id="dp" />
+        </div>
+        <p class="dose-end-text">{{ i18n "firstDoseEndText" | markdownify }}</p>
+      </div>
+      <div class="step-arrow">
+        &nbsp;
+      </div>
+      <div class="dose-schedule-chart">
+        <img class="chart-img" src="/images/chart.png" alt="">
+        <div class="dose-count">
+          <h1>04</h1>
+          <p>Doses</p>
+        </div>
+        <p class="left-date">
+          <span class="desk-view">29 Jan</span>
+          <span class="mobile-view">08 Oct</span>
+        </p>
+        <p class="top-date">
+          <span class="desk-view">23 Apr</span>
+          <span class="mobile-view">29 Jan</span>
+        </p>
+        <p class="right-date">16 Jul</p>
+        <p class="bottom-date">8 Oct</p>
+      </div>
+      <button onclick="printFunction()" class="btn dose-schedule-btn">{{ i18n "btnPrintText" | markdownify }}</button>
+      <img class="skyrizi-logo" src="/images/skyrizi.png" alt="">
+    </div>
+  </div>
+
+  <div class="footer-area">
+    {{ i18n "rules" | markdownify }}
+    <div class="print-only">
+      <hr />
+      <p class="mb-0"><b>{{ i18n "indication" | markdownify }}</b></p>
+      <p>{{ i18n "indicationDetail" | markdownify }}</p>
+      <p class="mb-0"><b>{{ i18n "safety" | markdownify }}</b></p>
+      {{ i18n "safetyDetail" | markdownify }}
+    </div>
+    <p>{{ i18n "iso" | markdownify }}</p>
+  </div>
+{{ end }}

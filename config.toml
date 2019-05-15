@@ -1,0 +1,29 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Dosing Schedule"
+DefaultContentLanguage  = "en"
+
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+archetypeDir = "src/archetypes"
+assetDir = "src/assets"
+contentDir = "src/content"
+dataDir = "src/data"
+layoutDir = "src/layouts"
+staticDir = "src/static"
+themesDir = "src/themes"
+i18nDir = "src/i18n"
+
+publishDir = ""
+
+[Languages]
+  [Languages.en]
+    languageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+  [Languages.fr]
+    languageCode        = "fr"
+    LanguageName        = "Français"
+    weight              = 2
+

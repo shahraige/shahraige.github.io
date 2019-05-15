@@ -1,0 +1,216 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.55.5" />
+    
+      <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Dosing Schedule</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+<link rel="stylesheet" href="/css/jquery-ui.css/" />
+<link rel="stylesheet" href="/css/bootstrap.min.css/" />
+<link rel="stylesheet" href="/css/site.min.css" />
+
+
+    
+
+    
+      <style>
+  @page { margin: 0mm; }
+  @media print {
+    main {
+      margin: 20px auto;
+    }
+    .chart-img{
+      width: 600px;
+      margin: 0 auto;
+    }
+    .header-title{
+      -webkit-print-color-adjust: exact; 
+      background-color: #00A5E0 !important;
+    }
+    .header-title>h3{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .header-title sup {
+      font-size: 10px;
+    }
+    .dose-schedule-btn{
+      display: none; 
+    }
+    .schedule-picker>.picker{
+      width: 180px;
+      height: 180px;
+      line-height: 180px;
+      -webkit-print-color-adjust: exact; 
+      background-image: url(/images/picker.png);
+    }
+    .ui-datepicker-trigger{
+      width: 50px;  
+      height: 50px;  
+    }
+    .step-arrow{
+      width: 60px;
+      height: 60px;
+      margin-left: 0;
+      margin-right: 0;
+      -webkit-print-color-adjust: exact;
+      background-image: url(/images/Forma.png);
+    }
+    .dose-end-text{
+      display: none;
+    }
+    .schedule-picker>h3 {
+      margin-top: -55px;
+    }
+    .skyrizi-logo{
+      display: block;
+    } 
+    .top-date {
+      top: 70px;
+    }
+    .left-date {
+      top: 285px;
+      left: 55px;
+    }
+    .right-date {
+      top: 285px;
+      right: 50px;
+    }
+    .bottom-date {
+      bottom: 70px;
+      left: 280px;
+    }
+    .print-only{
+      display: block;
+    }
+    #picked_date{
+      line-height: 172px;
+    }
+  }
+</style>
+
+    
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+              <main>
+                <ul>
+  
+    <li><a href="/">English</a></li>
+  
+    <li><a href="/fr/">Français</a></li>
+  
+</ul>
+      
+                
+  <div class="dose-schedule">
+    <div class="header-title">
+      <h3>SKYRIZI<sup>TM</sup> (risankizumab) Practice Dosing Schedule for the First Year</h3>
+    </div>
+  
+    <div class="dose-schedule-cmp">
+      <div class="schedule-picker">
+        <h3>Start</h3>
+        <div class="picker">
+          <p id="picked_date"></p>
+          <input type="hidden" id="dp" />
+        </div>
+        <p class="dose-end-text">End date<br>of 1st dose</p>
+      </div>
+      <div class="step-arrow">
+        &nbsp;
+      </div>
+      <div class="dose-schedule-chart">
+        <img class="chart-img" src="/images/chart.png" alt="">
+        <div class="dose-count">
+          <h1>04</h1>
+          <p>Doses</p>
+        </div>
+        <p class="left-date">
+          <span class="desk-view">29 Jan</span>
+          <span class="mobile-view">08 Oct</span>
+        </p>
+        <p class="top-date">
+          <span class="desk-view">23 Apr</span>
+          <span class="mobile-view">29 Jan</span>
+        </p>
+        <p class="right-date">16 Jul</p>
+        <p class="bottom-date">8 Oct</p>
+      </div>
+      <button onclick="printFunction()" class="btn dose-schedule-btn">Click to Print</button>
+      <img class="skyrizi-logo" src="/images/skyrizi.png" alt="">
+    </div>
+  </div>
+
+  <div class="footer-area">
+    <ul>
+<li>SKYRIZI is dosed 150 mg (two 75-mg subcutaneous injections) at Week 0, Week 4, and every 12 weeks thereafter.1</li>
+<li>SKYRIZI doses continue every 12 weeks after the first 5 doses shown above. It is important for patients to
+take their treatment as prescribed to achieve the full benefit. If patients stop treatment, their symptoms may
+come back.</li>
+<li>Consideration should be given to discontinuing treatment in patients who have shown no response after 16 weeks
+of treatment. Some patients with initial partial response may subsequently improve with continued treatment
+beyond 16 weeks.</li>
+<li>If a dose is missed, the dose should be administered as soon as possible. Thereafter, dosing should be resumed at
+the regular scheduled time.</li>
+</ul>
+    <div class="print-only">
+      <hr />
+      <p class="mb-0"><b>Indication</b></p>
+      <p>Skyrizi (risankizumab) is indicated for the treatment of moderate to severe plaque psoriasis in adults
+  who are candidates for systemic therapy.</p>
+      <p class="mb-0"><b>Important Safety Information</b></p>
+      <p>Risankizumab is contraindicated in patients with hypersensitivity to the active substance or to any of the excipients.
+Risankizumab may increase the risk of infection. In patients with a chronic infection, a history of recurrent infection,
+or known risk factors for infection, risankizumab should be used with caution. Treatment with risankizumab should not
+be initiated in patients with any clinically important active infection until the infection resolves or is adequately
+treated. Prior to initiating treatment with risankizumab, patients should be evaluated for tuberculosis (TB) infection.
+Patients receiving risankizumab should be monitored for signs and symptoms of active TB. Anti-TB therapy should be
+considered prior to initiating risankizumab in patients with a past history of latent or active TB in whom an adequate
+course of treatment cannot be confirmed.</p>
+
+<p>Prior to initiating therapy with risankizumab, completion of all appropriate immunisations should be considered
+according to current immunisation guidelines. If a patient has received live vaccination (viral or bacterial),
+it is recommended to wait at least 4 weeks prior to starting treatment with risankizumab. Patients treated with
+risankizumab should not receive live vaccines during treatment and for at least 21 weeks after treatment.</p>
+
+<p>The most frequently reported adverse reactions were upper respiratory infections, which occurred in 13% of patients.
+Commonly (≥ <sup>1</sup>&frasl;<sub>100</sub> to &lt; <sup>1</sup>&frasl;<sub>10</sub>) reported adverse reactions included tinea infections, headache, pruritus, fatigue and
+injection site reactions.</p>
+
+<p>This is not a complete summary of all safety information. See SKYRIZI full summary of product characteristics (SmPC)
+at <a href="https://www.ema.europa.eu/">www.ema.europa.eu</a>.</p>
+
+    </div>
+    <p><strong>ALL-SKZD-190006</strong></p>
+  </div>
+
+              </main>
+            </div>
+        </div>
+    </div>
+
+    
+      
+
+
+<script type="text/javascript" src="/js/jquery.min.js/"></script>
+<script type="text/javascript" src="/js/popper.min.js/"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js/"></script>
+
+<script type="text/javascript" src="/js/jquery-ui.js/"></script>
+
+<script type="text/javascript" src="/js/site.min.js"></script>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<style>
+  @page { margin: 0mm; }
+  @media print {
+    main {
+      margin: 20px auto;
+    }
+    .chart-img{
+      width: 600px;
+      margin: 0 auto;
+    }
+    .header-title{
+      -webkit-print-color-adjust: exact; 
+      background-color: #00A5E0 !important;
+    }
+    .header-title>h3{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .header-title sup {
+      font-size: 10px;
+    }
+    .dose-schedule-btn{
+      display: none; 
+    }
+    .schedule-picker>.picker{
+      width: 180px;
+      height: 180px;
+      line-height: 180px;
+      -webkit-print-color-adjust: exact; 
+      background-image: url(/images/picker.png);
+    }
+    .ui-datepicker-trigger{
+      width: 50px;  
+      height: 50px;  
+    }
+    .step-arrow{
+      width: 60px;
+      height: 60px;
+      margin-left: 0;
+      margin-right: 0;
+      -webkit-print-color-adjust: exact;
+      background-image: url(/images/Forma.png);
+    }
+    .dose-end-text{
+      display: none;
+    }
+    .schedule-picker>h3 {
+      margin-top: -55px;
+    }
+    .skyrizi-logo{
+      display: block;
+    } 
+    .top-date {
+      top: 70px;
+    }
+    .left-date {
+      top: 285px;
+      left: 55px;
+    }
+    .right-date {
+      top: 285px;
+      right: 50px;
+    }
+    .bottom-date {
+      bottom: 70px;
+      left: 280px;
+    }
+    .print-only{
+      display: block;
+    }
+    #picked_date{
+      line-height: 172px;
+    }
+  }
+</style>

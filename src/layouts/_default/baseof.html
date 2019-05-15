@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    {{ block "head" . }}
+      {{ partial "head" . }}
+    {{ end }}
+
+    {{ block "print" . }}
+      {{ partial "print" . }}
+    {{ end }}
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+              <main>
+                {{ partial "translations" . }}      
+                {{ block "main" . }} 
+                {{ end }}
+              </main>
+            </div>
+        </div>
+    </div>
+
+    {{ block "script" . }}
+      {{ partial "script" . }}
+    {{ end }}
+
+  </body>
+</html>
